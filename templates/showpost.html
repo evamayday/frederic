@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}消息內容頁面{% endblock %}
+{% block headmessage %} <h1>顯示消息內容</h1> {% endblock %}
+{% block content %}
+<table class='table table-striped table-bordered'>
+	<tr>
+		<td>事故時間</td>
+		<td>{{target.K_time}}</td>
+	</tr>
+	<tr>
+		<td>發生地點</td>
+		<td>{{target.K_location}}</td>
+	</tr>
+	<tr>
+		<td>死亡人數</td>
+		<td>{{target.K_death}}</td>
+	</tr>
+	<tr>
+		<td>受傷人數</td>
+		<td>{{target.K_injure}}</td>
+	</tr>
+
+</table>
+{% endblock %}
